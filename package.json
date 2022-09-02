@@ -1,0 +1,16 @@
+{
+  "name": "react-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "nanoid": "^4.0.0"
+  },
+  "scripts": {
+    "server": "yarn --cwd server dev",
+    "client": "yarn --cwd client start",
+    "start": "concurrently \"yarn server\" \"yarn client\""
+  }
+}
